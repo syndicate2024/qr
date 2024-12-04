@@ -1,0 +1,153 @@
+:root {
+  /* ## Colors */
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  /* ## Typography */
+  /* ### Font */
+  --body-size: 15px;
+  --font-family: "Outfit", sans-serif;
+  --font-weights: 400, 700;
+
+  /* Breakpoints */
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slate-300);
+  padding: 1rem;
+}
+
+.qr-card {
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-card img {
+  width: 100%;
+  border-radius: 0.625rem;
+  margin-bottom: 24px;
+}
+
+.qr-card h1 {
+  color: var(--slate-900);
+  font-size: 22px;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--font-family);
+  width: 258px; 
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.qr-card p {
+  color: var(--slate-500);
+  font-size: var(--body-size);
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0.02px;
+  text-align: center;
+  width: 256px;
+  height: 63px;
+  margin-bottom: 40px;
+}
+
+.attribution {
+  background-color: var(--slate-300);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Styles for screens up to 361px */
+@media screen and (max-width: 361px) {
+  .qr-card {
+    max-width: 290px;
+    padding: 12px;
+  }
+
+  .qr-card h1 {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .qr-card p {
+    width: 100%;
+    padding: 0 0.5rem;
+    margin-bottom: 24px;
+  }
+}
+
+/* Styles for screens 362px to 374px */
+@media screen and (min-width: 362px) and (max-width: 374px) {
+  .qr-card {
+    max-width: 310px;
+  }
+  
+  .qr-card h1 {
+    width: 100%;
+    font-size: 21px;
+  }
+  
+  .qr-card p {
+    width: 100%;
+  }
+}
+
+/* Styles for screens 375px to 1453px */
+@media screen and (min-width: 375px) and (max-width: 1453px) {
+  .qr-card {
+    max-width: 320px;
+    height: auto;
+  }
+  
+  .qr-card h1 {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 16px;
+  }
+  
+  .qr-card p {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Large desktop styles (1454px and above) */
+@media screen and (min-width: 1454px) {
+  .qr-card {
+    max-width: 320px;
+    transition: transform 0.3s ease;
+  }
+  
+  .qr-card:hover {
+    transform: scale(1.02);
+  }
+}
+
