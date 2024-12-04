@@ -24,7 +24,7 @@ A responsive QR code component that adapts to different screen sizes while maint
 
 ### Links
 
-- Solution URL: [https://github.com/syndicate2024](https://github.com/syndicate2024/qr)
+- Solution URL: [https://github.com/syndicate2024](https://github.com/syndicate2024)
 - Live Site URL: [https://syndicate2024.github.io/qr/](https://syndicate2024.github.io/qr/)
 
 ## My process
@@ -46,4 +46,6 @@ A responsive QR code component that adapts to different screen sizes while maint
 - Implementing hover effects
 - Using Flexbox for centering and layout
 
-Key code snippets:
+Here are some code snippets that showcase what I learned:
+
+</rewritten_file>
